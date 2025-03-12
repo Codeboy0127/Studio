@@ -1,0 +1,29 @@
+.app-navbar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 2px solid black;
+}
+
+.app-navbar img {
+    width: 17px;
+    height: 13px;
+}
+
+.app-navbar p {
+    padding: 0px;
+    font-size: 17px;
+}
+
+.app-navbar .iconBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .app-navbar {
+        padding: 0px 20px;
+    }
+}

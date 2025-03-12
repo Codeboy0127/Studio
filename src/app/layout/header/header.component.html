@@ -1,0 +1,29 @@
+<div class="app-header">
+        <img src="/img/mark.png" alt="">
+    <div class="showDesktop">
+        <button mat-button class="btnStudio">BOOK A STUDIO</button>
+        <button mat-button [matMenuTriggerFor]="menu">EN <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>EN</button>
+            <button mat-menu-item>CH</button>
+        </mat-menu>
+
+        <button mat-raised-button class="btnLogin">LOGIN</button>
+    </div>
+
+    <div class="showMobile">
+        <button mat-icon-button [matMenuTriggerFor]="animals"><mat-icon>menu</mat-icon></button>
+        <mat-menu #animals="matMenu">
+            <button mat-menu-item>BOOK A STUDIO</button>
+            <button mat-menu-item [matMenuTriggerFor]="languages">Languages</button>
+            <button mat-menu-item>LOGIN</button>
+        </mat-menu>
+
+        <mat-menu #languages="matMenu">
+            <button mat-menu-item>EN</button>
+            <button mat-menu-item>CH</button>
+        </mat-menu>
+    </div>
+
+
+</div>

@@ -1,0 +1,57 @@
+.app-header
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    
+}
+
+.app-header img
+{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0px);
+    width: 65px;
+    height: 49px;
+}
+
+.btnLogin
+{
+    background-color: #FE3B1F!important;
+    border-radius: 2px;
+    color: white!important;
+}
+.belowIcon
+{
+    width: 10px;
+    height: 11px;
+}
+
+.showDesktop
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.showMobile
+{
+    display: none;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .showDesktop
+    {
+        display: none;
+    }
+
+    .showMobile
+    {
+        display: block;
+    }
+}

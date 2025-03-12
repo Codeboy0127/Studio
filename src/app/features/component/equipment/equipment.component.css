@@ -1,0 +1,62 @@
+.info {
+    padding: 10px;
+}
+
+.info-items {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px 0px;
+}
+
+.warning
+{
+    margin: 15px 0px;
+}
+
+img
+{
+    width: 24px;
+    height: 26px;
+}
+
+.grid-item {
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.info-title {
+    font-size: 22px;
+}
+
+.info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.flex
+{
+    display: flex;
+    gap: 10px;
+}
+
+.flex p
+{
+    margin: 0px;
+}
+
+.inputBox
+{
+    padding: 5px;
+    width: 100%!important;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .info-items
+    {
+        grid-template-columns: 100%;
+    }
+}

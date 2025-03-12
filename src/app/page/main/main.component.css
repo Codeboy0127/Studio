@@ -1,0 +1,176 @@
+.app-content
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+.app-content .mainImg
+{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container
+{
+    width: 876px;
+    height: 584px;
+}
+
+.app-content .left
+{
+    width: 876px;
+}
+
+.app-content .right
+{
+    width: 437px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content .title
+{
+    border-bottom: 2px solid #808285;
+    margin-bottom: 20.55px;
+}
+.app-content .title .title-badge
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app-content .datetime
+{
+    margin-bottom: 48.6px;
+}
+
+
+.app-content .payMethods
+{
+    margin: 15px 0px 23.33px 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px;
+}
+
+
+
+.flexBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.app-content .title .title-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content h3, 
+.app-content h4,
+.app-content p
+{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+
+.app-content h3
+{
+    font-size: 34px;
+}
+
+.app-content h4
+{
+    font-size: 25.74px;
+}
+
+.app-content p
+{
+    font-size: 18px;
+    margin-bottom: 10.75px;
+}
+
+.app-content .btnTime
+{
+    margin: 14.6px 0px 40px 0px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.mdc-tab-indicator__content--underline{
+    border-color:red !important;
+}
+.mdc-tab-indicator--active .mdc-tab__text-label{
+    color:red !important;
+}
+
+@media only screen and (max-width: 1400px) {
+    
+    .left,
+    .right
+    {
+        width: 100%;
+    }
+    .img-container
+    {
+        width: 100%;
+        height: auto;
+    }
+    .app-content .payMethods
+    {
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+    .app-content .right
+    {
+        flex-direction: column-reverse;
+    }
+    .app-content .right .studio9
+    {
+        border-top: black 1px solid;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .app-content
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .app-content .payMethods img
+    {
+    width: 40px;
+
+    }
+
+    .left,
+    .right
+    {
+        width: 100%!important;
+    }
+    .mainImg
+    {
+        width: 100%;
+    }
+
+}
