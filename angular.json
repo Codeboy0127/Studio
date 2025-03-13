@@ -9,6 +9,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "ch": "src/locale/messages.ch.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -22,10 +28,13 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets/",
+              "src/favicon.ico",
               {
                 "glob": "**/*",
                 "input": "public"
               }
+
             ],
             "styles": [
               "src/custom-theme.scss",
@@ -53,6 +62,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "ch": {
+              "localize": ["ch"]
             }
           },
           "defaultConfiguration": "production"
@@ -65,6 +77,9 @@
             },
             "development": {
               "buildTarget": "my-angular-app:build:development"
+            },
+            "ch": {
+              "buildTarget": "my-angular-app:build:ch"
             }
           },
           "defaultConfiguration": "development"

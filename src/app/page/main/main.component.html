@@ -4,11 +4,11 @@
             <img src="/img/main.png" alt="" class="mainImg">
         </div>
         <mat-tab-group>
-            <mat-tab label="Equipment "> <app-equipment></app-equipment> </mat-tab>
-            <mat-tab label="Features"> Features </mat-tab>
-            <mat-tab label="Need to know"> Need to know </mat-tab>
-            <mat-tab label="Location"> Location </mat-tab>
-            <mat-tab label="Parking"> Parking </mat-tab>
+            <mat-tab [label]="'Equipment' | translate"> <app-equipment></app-equipment> </mat-tab>
+            <mat-tab [label]="'Features'|translate"> {{'Features'|translate}} </mat-tab>
+            <mat-tab [label]="'Need to know'|translate"> {{'Need to know'|translate}} </mat-tab>
+            <mat-tab [label]="'Location'|translate"> {{'Location'|translate}} </mat-tab>
+            <mat-tab [label]="'Parking'|translate"> {{'Parking'|translate}} </mat-tab>
         </mat-tab-group>
     </div>
 
@@ -16,35 +16,35 @@
         <div class="studio9">
         <div class="title flexBetween">
             <div class="title-content">
-                <h3>STUDIO 9</h3>
-                <p>DJ Standard</p>
+                <h3>{{'STUDIO 9'|translate}}</h3>
+                <p>{{'DJ Standard'|translate}}</p>
             </div>
             <div class="title-badge">
                 <mat-icon fontIcon="person"></mat-icon><span>3</span>
             </div>
         </div>
 
-        <p>Friday 14 February 2025</p>
+        <p>{{'Friday 14 February 2025'|translate}}</p>
         <div class="datetime flexBetween">
-            <p>DJ Standard</p>
-            <a href="#">Edit</a>
+            <p>{{'DJ Standard'|translate}}</p>
+            <a href="#">{{'Edit'|translate}}</a>
         </div>
 
-        <p>Payment breakdown</p>
+        <p>{{'Payment breakdown'|translate}}</p>
         <div class="flexBetween">
-            <p>DJ Standard (3 Hours)</p>
+            <p>{{'DJ Standard (3 Hours)'|translate}}</p>
             <p>£35.10</p>
         </div>
         <div class="flexBetween">
-            <h4>TOTAL</h4>
+            <h4>{{'TOTAL'|translate}}</h4>
             <h4>£35.10</h4>
         </div>
 
-        <button mat-raised-button disabled class="btnTime">TIME NOTAVAULABLE</button>
+        <button mat-raised-button disabled class="btnTime">{{'TIME NOTAVAULABLE'|translate}}</button>
         </div>
         <div class="payment">
             <div class="flexCenter">
-                <p>We accept</p>
+                <p>{{'We accept'|translate}}</p>
             </div>
             <div class="payMethods flexCenter">
                 <img src="/img/visa.png" alt="">
@@ -54,7 +54,7 @@
                 <img src="/img/pay4.png" alt="">
             </div>
             <div class="flexCenter">
-                <button mat-stroked-button>Powered by stripe</button>
+                <button mat-stroked-button>{{'Powered by stripe'|translate}}</button>
             </div>
         </div>
     </div>

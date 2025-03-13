@@ -1,27 +1,27 @@
 <div class="app-header">
         <img src="/img/mark.png" alt="">
     <div class="showDesktop">
-        <button mat-button class="btnStudio">BOOK A STUDIO</button>
+        <button mat-button class="btnStudio">{{ 'BOOK_A_STUDIO' | translate }}</button>
         <button mat-button [matMenuTriggerFor]="menu">EN <mat-icon>arrow_drop_down</mat-icon></button>
         <mat-menu #menu="matMenu">
-            <button mat-menu-item>EN</button>
-            <button mat-menu-item>CH</button>
+            <button mat-menu-item (click)="switchLanguage('en')">EN</button>
+            <button mat-menu-item (click)="switchLanguage('ch')">CH</button>
         </mat-menu>
 
-        <button mat-raised-button class="btnLogin">LOGIN</button>
+        <button mat-raised-button class="btnLogin">{{ 'LOGIN' | translate }}</button>
     </div>
 
     <div class="showMobile">
         <button mat-icon-button [matMenuTriggerFor]="animals"><mat-icon>menu</mat-icon></button>
         <mat-menu #animals="matMenu">
-            <button mat-menu-item>BOOK A STUDIO</button>
+            <button mat-menu-item>{{ 'BOOK_A_STUDIO' | translate }}</button>
             <button mat-menu-item [matMenuTriggerFor]="languages">Languages</button>
-            <button mat-menu-item>LOGIN</button>
+            <button mat-menu-item>{{ 'LOGIN' | translate }}</button>
         </mat-menu>
 
         <mat-menu #languages="matMenu">
-            <button mat-menu-item>EN</button>
-            <button mat-menu-item>CH</button>
+            <button mat-menu-item (click)="switchLanguage('en')">EN</button>
+            <button mat-menu-item (click)="switchLanguage('ch')">CH</button>
         </mat-menu>
     </div>
 

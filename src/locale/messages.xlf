@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="BOOK_A_STUDIO" datatype="html">
+        <source>BOOK A STUDIO</source>
+        <target>预订工作室</target>
+      </trans-unit>
+      <trans-unit id="LOGIN" datatype="html">
+        <source>LOGIN</source>
+        <target>登录</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
