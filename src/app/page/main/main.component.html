@@ -24,10 +24,28 @@
             </div>
         </div>
 
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Day of the trip </mat-panel-title>
+              <mat-panel-description>
+                Inform the date you wish to travel
+                <mat-icon>date_range</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <mat-form-field>
+              <mat-label>Date</mat-label>
+              <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly />
+            </mat-form-field>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-expansion-panel>
+
         <p>{{'Friday 14 February 2025'|translate}}</p>
         <div class="datetime flexBetween">
             <p>{{'DJ Standard'|translate}}</p>
             <a href="#">{{'Edit'|translate}}</a>
+
+
         </div>
 
         <p>{{'Payment breakdown'|translate}}</p>
